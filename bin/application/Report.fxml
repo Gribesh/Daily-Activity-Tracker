@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="741.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Button layoutX="314.0" layoutY="33.0" mnemonicParsing="false" onAction="#generate" text="Generate Report" />
+      <Label layoutX="90.0" layoutY="108.0" text="Sleeping Estimated" />
+      <Label fx:id="udsleep" layoutX="227.0" layoutY="108.0" prefHeight="17.0" prefWidth="168.0" text="ESTIMATED HOURS OF SLEEP" />
+      <Label layoutX="90.0" layoutY="135.0" text="Slept" />
+      <Label fx:id="avgsleep" layoutX="227.0" layoutY="135.0" prefHeight="17.0" prefWidth="168.0" text="HOURS OF SLEEP" />
+      <Label fx:id="inssleep" layoutX="91.0" layoutY="161.0" text="Sugestion" />
+      <Label layoutX="90.0" layoutY="193.0" text="Estimated Meal" />
+      <Label fx:id="udmeal" layoutX="227.0" layoutY="193.0" prefHeight="17.0" prefWidth="168.0" text="ESTIMATED TIMES OF MEAL" />
+      <Label layoutX="90.0" layoutY="220.0" text="Meal Taken" />
+      <Label fx:id="avgmeal" layoutX="227.0" layoutY="220.0" prefHeight="17.0" prefWidth="168.0" text="NUMBER OF MEALS TAKEN" />
+      <Label fx:id="insmeal" layoutX="91.0" layoutY="246.0" text="Sugestion" />
+      <Label layoutX="91.0" layoutY="279.0" text="Estimated Study" />
+      <Label fx:id="udstudy" layoutX="228.0" layoutY="279.0" prefHeight="17.0" prefWidth="168.0" text="ESTIMATED HOURS OF STUDY" />
+      <Label layoutX="91.0" layoutY="306.0" text="Studied" />
+      <Label fx:id="avgstudy" layoutX="228.0" layoutY="306.0" prefHeight="17.0" prefWidth="168.0" text="HOURS OF STUDY" />
+      <Label fx:id="insstudy" layoutX="92.0" layoutY="332.0" text="Sugestion" />
+      <Label layoutX="90.0" layoutY="372.0" text="Estimated Water" />
+      <Label fx:id="udwater" layoutX="227.0" layoutY="372.0" prefHeight="17.0" prefWidth="168.0" text="ESTIMATED GLASS OF WATER" />
+      <Label layoutX="90.0" layoutY="399.0" text="Water Taken" />
+      <Label fx:id="avgwater" layoutX="227.0" layoutY="399.0" prefHeight="17.0" prefWidth="168.0" text="GLASS OF WATER" />
+      <Label fx:id="inswater" layoutX="91.0" layoutY="425.0" text="Sugestion" />
+      <Label layoutX="90.0" layoutY="470.0" text="Estimated Excercise" />
+      <Label fx:id="udexercise" layoutX="227.0" layoutY="470.0" prefHeight="17.0" prefWidth="168.0" text="ESTIMATED HOURS OF EXERCISE" />
+      <Label layoutX="90.0" layoutY="497.0" text="Excersied " />
+      <Label fx:id="avgexercise" layoutX="227.0" layoutY="497.0" prefHeight="17.0" prefWidth="168.0" text="HOURS OF EXERCISE" />
+      <Label fx:id="insexercise" layoutX="91.0" layoutY="523.0" text="Sugestion" />
+      <ProgressBar fx:id="progressbar" layoutX="84.0" layoutY="555.0" prefHeight="25.0" prefWidth="574.0" progress="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ActivityController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="80.0" layoutY="163.0" prefHeight="35.0" prefWidth="54.0" text="Sleep" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="80.0" layoutY="203.0" prefHeight="35.0" prefWidth="88.0" text="Study Hours" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="80.0" layoutY="243.0" prefHeight="35.0" prefWidth="66.0" text="Exercise" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="80.0" layoutY="283.0" prefHeight="35.0" prefWidth="85.0" text="Meals" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="80.0" layoutY="323.0" prefHeight="35.0" prefWidth="66.0" text="Water" textAlignment="RIGHT">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ButtonBar layoutX="395.0" layoutY="511.0" prefHeight="55.0" prefWidth="265.0" />
+      <TextField fx:id="sleep" layoutX="168.0" layoutY="168.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="study" layoutX="168.0" layoutY="208.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="exercise" layoutX="168.0" layoutY="248.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="meals" layoutX="168.0" layoutY="288.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="water" layoutX="168.0" layoutY="328.0" prefHeight="25.0" prefWidth="64.0" />
+      <TextField fx:id="ua1" alignment="CENTER" layoutX="305.0" layoutY="171.0" promptText="ACTIVITY 1" />
+      <TextField fx:id="ua2" alignment="CENTER" layoutX="305.0" layoutY="211.0" promptText="ACTIVITY 2" />
+      <TextField fx:id="ua3" alignment="CENTER" layoutX="305.0" layoutY="251.0" promptText="ACTIVITY 3" />
+      <TextField fx:id="ua4" alignment="CENTER" layoutX="305.0" layoutY="291.0" promptText="ACTIVITY 4" />
+      <TextField fx:id="ua5" alignment="CENTER" layoutX="305.0" layoutY="331.0" promptText="ACTIVITY 5" />
+      <Label layoutX="90.0" layoutY="121.0" text="PRE-DEFINED ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="415.0" layoutY="121.0" text="USER-DEFINED">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ua_1" alignment="CENTER" layoutX="489.0" layoutY="171.0" prefHeight="25.0" prefWidth="79.0" promptText="ACTIVITY 1" />
+      <TextField fx:id="ua_2" alignment="CENTER" layoutX="489.0" layoutY="211.0" prefHeight="25.0" prefWidth="79.0" promptText="ACTIVITY 2" />
+      <TextField fx:id="ua_3" alignment="CENTER" layoutX="487.0" layoutY="251.0" prefHeight="25.0" prefWidth="79.0" promptText="ACTIVITY 3" />
+      <TextField fx:id="ua_4" alignment="CENTER" layoutX="487.0" layoutY="291.0" prefHeight="25.0" prefWidth="79.0" promptText="ACTIVITY 4" />
+      <TextField fx:id="ua_5" alignment="CENTER" layoutX="487.0" layoutY="331.0" prefHeight="25.0" prefWidth="79.0" promptText="ACTIVITY 5" />
+      <Label layoutX="213.0" layoutY="31.0" prefHeight="36.0" prefWidth="272.0" text="YOUR DAILY ACTIVITIES">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="uap_1" contentDisplay="TOP" layoutX="582.0" layoutY="171.0" mnemonicParsing="false" text="PERIOD">
+         <items>
+            <RadioMenuItem mnemonicParsing="false" text="DAILY">
+               <toggleGroup>
+                  <ToggleGroup fx:id="uapa_1" />
+               </toggleGroup>
+            </RadioMenuItem>
+            <RadioMenuItem mnemonicParsing="false" text="WEEKLY" toggleGroup="$uapa_1" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="uap_2" layoutX="582.0" layoutY="208.0" mnemonicParsing="false" text="PERIOD">
+         <items>
+            <RadioMenuItem mnemonicParsing="false" text="DAILY">
+               <toggleGroup>
+                  <ToggleGroup fx:id="uapa_2" />
+               </toggleGroup>
+            </RadioMenuItem>
+            <RadioMenuItem mnemonicParsing="false" text="WEEKLY" toggleGroup="$uapa_2" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="uap_3" layoutX="582.0" layoutY="248.0" mnemonicParsing="false" text="PERIOD">
+         <items>
+            <RadioMenuItem mnemonicParsing="false" text="DAILY">
+               <toggleGroup>
+                  <ToggleGroup fx:id="uapa_3" />
+               </toggleGroup>
+            </RadioMenuItem>
+            <RadioMenuItem mnemonicParsing="false" text="WEEKLY" toggleGroup="$uapa_3" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="uap_4" layoutX="582.0" layoutY="291.0" mnemonicParsing="false" text="PERIOD">
+         <items>
+            <RadioMenuItem mnemonicParsing="false" text="DAILY">
+               <toggleGroup>
+                  <ToggleGroup fx:id="uapa_4" />
+               </toggleGroup>
+            </RadioMenuItem>
+            <RadioMenuItem mnemonicParsing="false" text="WEEKLY" toggleGroup="$uapa_4" />
+         </items>
+      </MenuButton>
+      <MenuButton fx:id="uap_5" layoutX="582.0" layoutY="331.0" mnemonicParsing="false" text="PERIOD">
+         <items>
+            <RadioMenuItem mnemonicParsing="false" text="DAILY">
+               <toggleGroup>
+                  <ToggleGroup fx:id="uapa_5" />
+               </toggleGroup>
+            </RadioMenuItem>
+            <RadioMenuItem mnemonicParsing="false" text="WEEKLY" toggleGroup="$uapa_5" />
+         </items>
+      </MenuButton>
+      <MenuButton layoutX="593.0" layoutY="67.0" mnemonicParsing="false" text="MENU">
+         <items>
+            <MenuItem mnemonicParsing="false" text="HOME" />
+            <MenuItem mnemonicParsing="false" text="SURVEY" />
+            <MenuItem mnemonicParsing="false" text="LOGOUT" />
+         </items>
+      </MenuButton>
+      <Button layoutX="529.0" layoutY="447.0" mnemonicParsing="false" onAction="#survey_reset" text="RESET">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="upload" layoutX="593.0" layoutY="447.0" mnemonicParsing="false" onAction="#upload" prefHeight="25.0" prefWidth="73.0" text="UPLOAD">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

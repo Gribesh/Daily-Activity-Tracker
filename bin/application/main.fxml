@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="408.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label layoutX="62.0" layoutY="91.0" text="Log in to DAT" />
+      <Label fx:id="verify" layoutX="69.0" layoutY="119.0" text="        " textFill="RED" />
+      <TextField fx:id="name" layoutX="62.0" layoutY="143.0" prefHeight="32.0" prefWidth="227.0" promptText="Name" />
+      <PasswordField fx:id="pwd" layoutX="62.0" layoutY="188.0" prefHeight="32.0" prefWidth="227.0" promptText="Password" />
+      <Label layoutX="1.0" prefHeight="54.0" prefWidth="349.0" text="       Daily Activity Tracker">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="recovery" layoutX="62.0" layoutY="231.0" mnemonicParsing="false" onAction="#recovery" text="Forget Password?" />
+      <Line endX="7.0" layoutX="154.0" layoutY="306.0" startX="-85.0" />
+      <Label layoutX="166.0" layoutY="297.0" text="or" />
+      <Button fx:id="index" layoutX="153.0" layoutY="271.0" mnemonicParsing="false" onAction="#index" text="Login" />
+      <Button fx:id="register" layoutX="117.0" layoutY="318.0" mnemonicParsing="false" onAction="#register" text="Create New Account" />
+      <Line endX="7.0" layoutX="270.0" layoutY="306.0" startX="-85.0" />
+   </children>
+</AnchorPane>
